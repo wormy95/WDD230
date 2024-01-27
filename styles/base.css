@@ -1,0 +1,125 @@
+/* Reset some default browser styles */
+body, h1, h2, h3, p, ul, li, figure {
+    margin: 0 auto;
+    padding: 0;
+}
+
+body {
+    max-width: 800px;
+    font-family: 'Open Sans', sans-serif; /* Use Google Fonts API to select a font */
+    font-size: 16px;
+    line-height: 1.6;
+    color: black; /* Text color */
+    background-color: #f8f8f8; /* Background color */
+    flex-direction: column;
+}
+
+header {
+    
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(199, 228, 228);
+    font-weight: bold; 
+    font-size: 32px; 
+    color:rgb(77, 75, 75)
+
+    
+}
+
+header img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 50%; /* Make the profile image circular */
+}
+
+nav {
+    flex-direction: column; /* Display links vertically in mobile view */
+    background-color: rgb(107, 107, 175); /* Navigation background color */
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+   
+}
+
+nav li {
+    text-align: center;
+
+}
+
+nav a {
+    display: block;
+    text-decoration: none;
+    color: #fff; /* Link text color */
+    padding: 0.5rem;
+
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto; /* Center the main content */
+    padding: 20px;
+    flex-direction: column;
+}
+
+.card {
+    background-color: #fff; /* Card background color */
+    margin-bottom: 20px;
+    border-radius: 8px;
+    display: inline-block;
+    grid-row: 2; /* Place cards in the second row */
+    flex-direction: column;
+ 
+}
+
+
+
+nav a:hover{
+    background-color: rgba(255,255,255,0.2);
+    border: 1px solid #fff;
+}
+
+h1 {
+    text-align: center; /* Center the heading */
+    grid-row: 1; /* Place h1 in the first row */
+    white-space: nowrap;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   
+    
+}
+
+h2{
+    background-color: rgb(107, 107, 175);
+    padding: 10px;
+    margin-top: 0; /* Remove default margin to avoid extra spacing */
+    border-radius: 8px 8px 0 0; /* Apply rounded corners to the top */
+    
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+    
+footer{
+    text-align: center;
+    background-color: rgb(107, 107, 175);
+}
+
+/* Media query for small screens */
+@media screen and (max-width: 600px) {
+    main,
+    .card {
+        width: 100%; /* Set full width on small screens */
+        padding: 10px; /* Adjust padding for better spacing on small screens */
+    }
+}
+
+
+
+
+
+/* Add other styles as needed for consistent spacing, alignment, etc. */
+

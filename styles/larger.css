@@ -1,0 +1,13 @@
+/* Media Query for larger views */
+@media screen and (min-width: 768px) {
+    nav ul {
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    main {
+        display: grid; /* Use CSS Grid for main content */
+        grid-template-columns: repeat(2, 1fr); /* Two columns layout in larger views */
+        gap: 20px; /* Set grid gap */
+    }
+}
